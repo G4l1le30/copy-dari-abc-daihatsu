@@ -299,8 +299,8 @@ footer {
     text-align: center;
 }
 
-.testimonial-images {
-    display: flex;
+    .testimonial-images {
+        display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
