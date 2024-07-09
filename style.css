@@ -437,11 +437,9 @@ footer {
 .interior-item img {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-
 }
 
 .interior-item:hover img,
@@ -468,10 +466,22 @@ footer {
 }
 
 .engine-item img {
-    max-width: auto;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.engine-item:hover img,
+.engine-item:focus img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .interior-item,
+    .engine-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
 }
