@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./Logos/daihatsu logo4.webp">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="./Logos/daihatsu logo4.webp" alt="Logo">
+            </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" draggable="true">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="./Logos/Whatsapp.png" alt="WhatsApp" class="contact-icon">
+                        <span>+62 851-5956-6411</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./Logos/gmailLogo2.webp" alt="Email" class="contact-icon">
+                        <span>arditaapril4@gmail.com</span>
+                    </div>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="5d7188c0-c819-4cb6-ba32-8ff85a8d5344">
+                    
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                  
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <div class="button-container">
+                        <button type="submit">Kirim</button>
+                        <a href="index.html" id="back-button">
+                            <button type="button">Back</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+    <script>
+        document.getElementById('back-button').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            window.location.href = this.getAttribute('href'); 
+        });
+    </script>
+</body>
+</html>
