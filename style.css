@@ -437,11 +437,41 @@ footer {
 .interior-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
 }
 
-.interior-item p {
-    margin-top: 10px;
-    font-size: 1em;
+.interior-item:hover img,
+.interior-item:focus img {
+    transform: scale(1.05);
+}
+
+.engine {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.engine-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.engine-item {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.engine-item img {
+    max-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
