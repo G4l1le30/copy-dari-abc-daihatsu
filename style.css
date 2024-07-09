@@ -352,7 +352,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
 }
 
 .product-image img {
