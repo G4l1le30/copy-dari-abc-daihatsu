@@ -191,27 +191,8 @@ textarea {
     font-size: 1em;
 }
 
-.slide-arrow {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5em;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-}
 
-#slide-left {
-    left: 10px;
-}
 
-#slide-right {
-    right: 10px;
-}
 
 a {
     color: inherit;
