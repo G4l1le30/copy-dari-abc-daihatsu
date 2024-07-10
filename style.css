@@ -301,6 +301,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .interior-item img,
+    .engine-item img {
+        max-width: 100%;
+    }
 }
 
 .testimonials {
@@ -481,10 +485,19 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-@media (max-width: 768px) {
-    .interior-item img,
-    .engine-item img {
-        max-width: 100%;
-    }
+.contact-info div, .contact-info img {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-info img {
+    max-width: 100%;
+    height: auto;
 }
