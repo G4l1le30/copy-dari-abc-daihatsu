@@ -248,9 +248,12 @@ a {
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+    background-color: #fff3f3;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .contact-item {
@@ -275,35 +278,46 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px 0;
+    }
+
     .product {
         max-width: 100%;
     }
-    
+
     header .logo img {
-        height: 30px;
+        height: 50px;
     }
-    
+
     nav ul {
         flex-direction: column;
     }
-    
+
     nav ul li {
         margin-left: 0;
         margin-bottom: 10px;
     }
-    
+
     .contact input,
     .contact textarea {
         width: calc(100% - 20px);
     }
-    
+
     .testimonial-images {
         flex-direction: column;
         align-items: center;
     }
+
     .interior-item img,
     .engine-item img {
         max-width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 15px;
     }
 }
 
@@ -376,16 +390,16 @@ footer {
 }
 
 .product-description {
-    max-width: 800px; /* Increase max-width for more text space */
-    margin: 20px auto; /* Center align the text block */
-    text-align: justify; /* Justify text for better alignment */
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
 }
 
 .product-description p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    padding: 10px 20px; /* Adjust padding to increase space */
-    line-height: 1.8; /* Adjust line height for better readability */
+    padding: 10px 20px;
+    line-height: 1.8;
 }
 
 .product-description ul {
@@ -456,11 +470,6 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-/* 
-.interior-item:hover img,
-.interior-item:focus img {
-    transform: scale(1.05);
-} */
 
 .engine {
     background: white;
@@ -480,7 +489,7 @@ footer {
 
 .engine-item img {
     width: 100%;
-    max-width: 600px; /* Adjust based on the desired maximum width */
+    max-width: 600px;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
