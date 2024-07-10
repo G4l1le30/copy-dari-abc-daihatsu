@@ -485,24 +485,3 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Ensure the content is centered */
-    flex-wrap: wrap;
-    text-align: center; /* Center the text for smaller screens */
-}
-
-.contact-info div, .contact-info img {
-    flex: 1;
-    margin: 10px;
-    max-width: 100%; /* Ensure the image doesn't overflow */
-}
-
-.contact-info img {
-    max-width: 500px; /* Set a max-width to control the image size */
-    height: auto;
-    display: block; /* Ensure the image is treated as a block element */
-    margin-left: auto;
-    margin-right: auto; /* Center the image horizontally */
-}
