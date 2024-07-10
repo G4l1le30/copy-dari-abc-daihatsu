@@ -452,11 +452,11 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-/* 
+
 .interior-item:hover img,
 .interior-item:focus img {
     transform: scale(1.05);
-} */
+}
 
 .engine {
     background: white;
