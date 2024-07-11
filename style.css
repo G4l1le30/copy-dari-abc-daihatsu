@@ -137,6 +137,7 @@ textarea {
     border-radius: 10px; /* Tambahan: Menambahkan border radius agar gambar terlihat lebih rapi */
 }
 
+
 .product:hover {
     transform: scale(1.05);
 }
@@ -249,17 +250,35 @@ a {
 
 .contact-info {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: center; /* Ensure the content is centered */
+    flex-wrap: wrap;
+    text-align: center; /* Center the text for smaller screens */
+    background-color: #fff3f3;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.contact-item {
+.contact-info .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
 }
+.contact-info .contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.contact-info img {
+    width: 100%;
+    max-width: 500px; /* Set a max-width to control the image size */
+    height: auto;
+    display: block; /* Ensure the image is treated as a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+}
+
+
 
 .contact-icon {
     width: 24px;
@@ -299,6 +318,17 @@ footer {
     .contact textarea {
         width: calc(100% - 20px);
     }
+    .contact-info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
 
     .testimonial-images {
         flex-direction: column;
@@ -309,6 +339,7 @@ footer {
     .engine-item img {
         max-width: 100%;
     }
+    
 }
 
 .testimonials {
